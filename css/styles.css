@@ -1,16 +1,39 @@
-.container {
+.body {
   background-color: pink;
-  width: 400px;
-  display: block;
+}
+
+.container {
+  background-color: white;
+  width: 300px;
   margin: 0 auto;
+  margin-top: 20px;
   border-radius: 10px;
+  padding: 10px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
 }
 
 h1 {
-  font-size: 50px;
+  font-size: 30px;
+  text-align: center;
+  padding: 10px;
+}
+
+.drop-down {
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  width: 300px;
+  padding: 10px;
 }
 
 footer {
   text-align: center;
   font-size: 15px;
+  padding: 20px;
+}
+
+.city {
+  padding: 10px;
+  margin-left: 40px;
+  padding-bottom: 20px;
 }
