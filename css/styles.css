@@ -16,14 +16,17 @@ h1 {
   font-size: 30px;
   text-align: center;
   padding: 10px;
+  font-family: sans-serif;
 }
 
 .drop-down {
   text-align: center;
   margin: 0 auto;
   display: block;
-  width: 300px;
+  width: 90%;
   padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 30px;
 }
 
 footer {
@@ -36,4 +39,21 @@ footer {
   padding: 10px;
   margin-left: 40px;
   padding-bottom: 20px;
+
+  display: flex;
+  justify-content: space-between;
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+.time {
+  display: flex;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.time small {
+  font-size: 15px;
+  vertical-align: middle;
+  line-height: 30px;
 }
