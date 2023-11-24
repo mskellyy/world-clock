@@ -19,3 +19,13 @@ newYorkDateElement.innerHTML = newYorkTime.format("MMMM Do YYYY");
 newYorkTimeElement.innerHTML = newYorkTime.format(
   "h:m:ss [<small>]A[</small>]"
 );
+
+// Paris Date/Time
+
+let parisElement = document.querySelector("#paris");
+let parisDateElement = parisElement.querySelector(".date");
+let parisTimeElement = parisElement.querySelector(".time");
+let parisTime = moment().tz("Europe/Paris");
+
+parisDateElement.innerHTML = parisTime.format("MMMM Do YYYY");
+parisTimeElement.innerHTML = parisTime.format("h:m:ss [<small>]A[</small>]");
