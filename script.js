@@ -1,12 +1,16 @@
 // Vancouver Date/Time
+function updateVanTime() {
+  let vanElement = document.querySelector("#van");
+  let vanDateElement = vanElement.querySelector(".date");
+  let vanTimeElement = vanElement.querySelector(".time");
+  let vanTime = moment().tz("Canada/Pacific");
 
-let vanElement = document.querySelector("#van");
-let vanDateElement = vanElement.querySelector(".date");
-let vanTimeElement = vanElement.querySelector(".time");
-let vanTime = moment().tz("Canada/Pacific");
+  vanDateElement.innerHTML = vanTime.format("MMMM Do YYYY");
+  vanTimeElement.innerHTML = vanTime.format("h:m:ss [<small>]A[</small>]");
+}
 
-vanDateElement.innerHTML = vanTime.format("MMMM Do YYYY");
-vanTimeElement.innerHTML = vanTime.format("h:m:ss [<small>]A[</small>]");
+updateVanTime();
+setInterval(updateVanTime, 1000);
 
 // New York Date/Time
 
