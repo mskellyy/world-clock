@@ -41,3 +41,24 @@ function updateParisTime() {
 
 updateParisTime();
 setInterval(updateParisTime, 1000);
+
+// Select drop down
+
+function updateCity(event) {
+  let cityTimeZone = event.target.value;
+  let cityName = cityTimeZone.replace("_", " ").split("/")[1];
+  let cityTime = moment().tz(cityTimeZone);
+  let citiesElement = document.querySelector("#inject-new-city");
+  citiesElement.innerHTML = `<div class="city" id="van">
+        <div>
+          <h2 class="city-name">${cityName}</h2>
+          <div class="date">${cityTime.format("MMMM Do YYYY")}</div>
+        </div>
+        <div class="time">${cityTime.format("h:mm:ss")}<small>${cityTime.format(
+    "A"
+  )}</small></div>
+      </div>`;
+}
+
+let citySelectElement = document.querySelector("#citySelect");
+citySelectElement.addEventListener("change", updateCity);
