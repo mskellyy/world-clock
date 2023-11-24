@@ -18,12 +18,14 @@
   <body class="body">
     <div class="container">
       <h1>World Clock</h1>
-      <select name="" id="" class="drop-down">
+      <select name="" id="citySelect" class="drop-down">
         <option value="">Select a City</option>
-        <option value="">Vancouver 🍁</option>
-        <option value="">New York 🚕</option>
-        <option value="">Paris 🥐</option>
+        <option value="Europe/London">London 🫖</option>
+        <option value="Australia/Sydney">Sydney 🐨</option>
+        <option value="America/Costa_Rica">Costa Rica 🏝️</option>
       </select>
+
+      <div id="inject-new-city"></div>
 
       <div class="city" id="van">
         <div>
@@ -36,17 +38,17 @@
       <div class="city" id="new-york">
         <div>
           <h2 class="city-name">New York 🚕</h2>
-          <div class="date">August 15, 2023</div>
+          <div class="date"></div>
         </div>
-        <div class="time">1:48:09 <small>AM</small></div>
+        <div class="time"></div>
       </div>
 
       <div class="city" id="paris">
         <div>
           <h2 class="city-name">Paris 🥐</h2>
-          <div class="date">August 15, 2023</div>
+          <div class="date"></div>
         </div>
-        <div class="time">1:48:09 <small>AM</small></div>
+        <div class="time"></div>
       </div>
     </div>
 
