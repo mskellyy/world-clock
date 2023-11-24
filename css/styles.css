@@ -27,7 +27,7 @@
   width: 80%;
   padding: 10px;
   border-radius: 4px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 footer {
@@ -70,4 +70,17 @@ footer {
 
 .date {
   font-size: 13px;
+}
+
+.world-img {
+  display: block;
+  margin: 0 auto;
+  width: 10%;
+}
+
+.refresh {
+  display: block;
+  margin: 0 auto;
+  width: 4%;
+  margin-bottom: 20px;
 }
